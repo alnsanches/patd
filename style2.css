@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+    --bg: #e8e7d5;
+    --yellow: #ffd630;
+    --orange: #f5812a;
+    --red: #ee2e2b;
+    --black: #312f32;
+    --green: #1c5335;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: var(--black);
+}
+
+body {
+    background: var(--bg);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.btn::after {
+    content: "▲";
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--bg);
+    transition: margin-top 250ms;
+}
+
+.btn:hover::after {
+    margin-top: -8px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: right;
+    cursor: pointer;
+    flex-direction: row;
+    font-weight: 600;
+}
+
+.navbar ul li {
+    margin-right: 30px;
+}
+
+.navbar ul li a {
+    display: flex;
+    position: relative;
+    padding-top: 25px;
+}
+
+.navbar ul li a:hover {
+    color: var(--orange);
+}
+
+.hero-img {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid var(--black);
+    background-size: contain;
+    margin-top: 20px;
+}
+
+.hero-img img {
+    width: 100%;
+    height: 750px;
+}
+
+.container-band-members {
+    text-align: center;
+    width: 100%;
+}
+
+.container-band-members h1 {
+    font-size: 46px;
+    margin-top: 1000px;
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 150px;
+}
+
+.band-members {
+    display: inline-block;
+    padding: 26px;
+    margin-bottom: 400px;
+}
+
+.band-members img {
+    width: 250px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.band-members img:hover {
+    transform: scale(1.1);
+    transition: all 0.8 ease;
+}
+
+/* ALBUMS */
+
+.container-album {
+    text-align: center;
+    width: 100%;
+}
+
+.container-album h1 {
+    font-size: 46px;
+    margin-top: 400px;
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+
+.band-albums {
+    display: inline-block;
+    padding: 26px;
+}
+
+.band-albums h4 {
+    margin-top: 6px;
+}
+
+.band-albums img {
+    width: 250px;
+}
+
+/* VIDEOCLIPES */
+
+.container-musicvideos {
+    margin-top: 300px;
+}
+
+.container-musicvideos h1 {
+    font-size: 46px;
+    margin-top: 400px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.band-musicvideos img {
+    width: 100%;
+}
+
+.retangulo {
+    width: 500px;
+    height: 650px;
+    position: absolute;
+    top: 4500px;
+    left: 400px;
+    right: 0;
+    bottom: 0;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(123, 123, 125, 0.37);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border-radius: 10px;
+}
+
+.retangulo .links-videos {
+    margin-left: 26px;
+    margin-top: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.retangulo .links-videos li a {
+    color: var(--black);
+}
+
+.retangulo .links-videos li a:hover {
+    transform: scale(1.1);
+    color: var(--green);
+}
+
+/* OLD MEMBERS */
+
+.container-band-oldmembers {
+    text-align: center;
+    width: 100%;
+}
+
+.container-band-oldmembers h1 {
+    font-size: 46px;
+    margin-top: 400px;
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.band-oldmembers {
+    display: inline-block;
+    padding: 26px;
+}
+
+.band-oldmembers img {
+    width: 250px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-filter: grayscale(100%);
+
+}
+
+.band-oldmembers img:hover {
+    transform: scale(1.1);
+    transition: all 0.8 ease;
+    -webkit-filter: grayscale(0%);
+    transition: 1s;
+}
+
+
+footer {
+    background-color: var(--black);
+    height: 300px;
+    margin-top: 400px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+footer h4 {
+    color: var(--yellow);
+    font-size: 26px;
+    padding-top: 70px;
+}
+
+.socials {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.socials p {
+    margin-top: 20px;
+    color: #e8e7d5;
+}
+
+.socials p strong {
+    color: var(--yellow);
+}
+
+.socials p a {
+    color: var(--orange);
+}
+
+.socials p a:hover {
+    color: var(--bg);
+}
+
+.socials i {
+    color: #e8e7d5;
+    width: 25px;
+    margin-top: 26px;
+    margin-bottom: 12px;
+}
+
+.socials i:hover {
+    color: var(--orange);
+    transform: scale(1.5);
+    transition: all 0.8 ease;
+    transition: 0.5s;
+}
+
+.img-left img,
+.img-right img {
+    width: 250px;
+}
+
+.img-left img {
+    left: -50px;
+    transform: rotateZ(-10deg);
+    margin-top: -160px;
+    margin-left: -1490px;
+    border: 12px solid var(--red);
+}
+
+.img-right img {
+    right: -50px;
+    transform: rotateZ(10deg);
+    margin-top: -460px;
+    margin-right: -1465px;
+    border: 12px solid var(--red);
+}
