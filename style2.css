@@ -115,6 +115,8 @@ body {
 .band-members img:hover {
     transform: scale(1.1);
     transition: all 0.8 ease;
+    -webkit-filter: grayscale(100%);
+    transition: 1s;
 }
 
 /* ALBUMS */
